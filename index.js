@@ -3,7 +3,7 @@ const productsList = document.querySelector(".products__list")
 
 
 const getMovies = async () => {
-    await fetch("http://localhost:3000/").then((response) => {
+    await fetch("http://localhost:3002/").then((response) => {
         return response.json()
     }).then((data) => {
         const dataItem = data.map((element) => {
